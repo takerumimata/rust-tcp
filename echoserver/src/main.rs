@@ -10,6 +10,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     echo_server(addr)?;
     Ok(())
 }
+
 fn echo_server(address: &str) -> Result<(), Box<dyn Error>> {
     let listener = TcpListener::bind(address)?; // [1]
     loop {
